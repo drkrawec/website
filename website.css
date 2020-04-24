@@ -1,56 +1,169 @@
-#home{
-    background-image: linear-gradient(135deg, darkblue, black);
-    font-family:  helvetica, Arial, sans-serif;
-}
-#about{
-    background-image: linear-gradient(135deg, rgb(255, 196, 148), pink);
-}
-#palm{
-    float: right;
-    position: relative;
+*{}
 
-}
+a:hover{cursor: url(assets/cursors/flame64x.png), default;} 
 
-li {
+header li {
     display: inline-block;
     color: white;   
     float: left;
-    margin: none;    
-    
+    margin: none;       
 }
-
-li a {
+header li a {
     display: block;
+    padding: .3em;
+}
+footer {    
+    bottom: 10px;
+    color: lime;
+    /* border: 3px solid black; */
     padding: 1em
 }
-.gif{
-    float: ;
+#header{
+    max-width: 10%;
+    display: flex;
+}
+#index{
+    background-image: linear-gradient(135deg, darkblue, black);
+    font-family:  helvetica, Arial, sans-serif;
+    margin: 5% 10% 0% 10%;
+    display: grid;
+    cursor: url(assets/cursors/rose80x.png), default;
+}
+#index header img{
+    position: absolute;
+    padding-left: .25em; 
+    margin-left: -1.25em;
+    margin-top: -2em;
+}
+#index .logo {
+    text-shadow: 2px 2px rgb(255, 0, 200);
+    color: lime;
+}
+#index .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3em 0em ;
+    
+    
+}
+#index .wrapper div{
+    /* border: 2px solid white; */
+    min-width: 1em;
+    min-height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#index .wrapper img{
+    box-shadow: .5em .5em .5em lime;
+    border: .25em solid black;
+
+}
+    
+
+#about .logo {
+    text-shadow: 2px 2px white;
+    color: #0278f3
+}
+
+#about{
+    background-image: linear-gradient(135deg, rgb(255, 196, 148), pink);
+    font-family:  helvetica, Arial, sans-serif;
+    margin: 5% 10% 0% 10%;
+    display: grid;
+    max-width: 1000px;
+    align-content: center;
+    cursor: url(./assets/cursors/Apple\ 2.cur), default;
+
+}
+#about .links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+    min-height: 4em;
+    padding: 1em 1.5em ;    
+}
+#about .links div{
+    color:  #ffffff;
+    text-shadow:2px 2px 2px hsl(221, 94%, 68%);
+}
+
+#about .logo img{
+    position: absolute;
+    padding: none ;
+}
+
+#about .background{
+    position: absolute;
+    z-index: -1;
+    right: 4em;
+    top: 8em;
+    filter: drop-shadow(5px 5px 10px black);
+}
+#about .background img {
+    border-radius: 50%;
+}
+#about .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3em;
+    position: absolute middle;   
+}
+#about .box-2{
+    font-size: 1.5em;
+    color: white; 
+    text-shadow: 2px 2px 2px coral;
+}
+div{
+     /* border: 1px solid black; */
+}
+
+#about .box-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    
+
+}
+
+.whiteborder {
+    border: .25em solid white;
+    border-radius: 15px;   
+}
+
+  }
+.shadow {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    /* Similar syntax to box-shadow */
+}
+.dropshadow{
+    box-shadow: 5px 5px 7px black;
 }
 
 .logo {
     font-family: plasma11;
     color: white;
     font-weight: 100;
+    line-height: 55px;
     text-decoration: none;
     font-size: 2em;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px red;
 }
+
 .nav {
-    position: absolute;
-    font-size: large;
+    font-size: 1.25em;
+    padding:none
     background-color:none ;
-    border: 3px solid white;
-    border-radius: 50%;
-    border-style: solid;
     display: inline-block;  
-    float: left;
     -webkit-padding-start: 0;
+    font-family: Helvetica, Arial, Sans-Serif;
+    margin: 0px 0px 0px -5px;
 }
  a.nav-link:link
 {
    color: white;
    text-decoration: none;
-   
 }
 a.nav-link:visited
 {
@@ -60,15 +173,48 @@ a.nav-link:visited
 a.nav-link:hover
 {
    color: red;
-   text-shadow: 5px, 5px,  black;
+   text-decoration: none;
 }
 a.nav-link:active
 {
    color:red;
    text-decoration: none;
 }
-
 @font-face {
     font-family: Plasma11;
     src: url(assets/fonts/plasmatica/Plasma11.ttf);
 }
+
+
+/*.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+
+}
+.wrapper div {
+    padding: 1em;
+    background-color: #ddd;
+}
+.wrapper div:nth-child(odd) {
+    background-color: #eee;
+} */
+/*
+.container-1{
+display: flex;
+
+}
+.container-1 div{
+border: 1px solid gray;
+text-align: ;
+padding: 10px;
+}
+.box-1{
+
+}
+.box-2{
+
+}
+.box-3{
+}
+*/
